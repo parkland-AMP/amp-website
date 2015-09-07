@@ -1,6 +1,6 @@
 app
 	.controller('SplashCtrl', function($scope){
-		$scope.title = 'Angular-Enabled';
-		$scope.small;
+		$scope.title = 'Welcome';
+		$scope.main = true;
 
 });
