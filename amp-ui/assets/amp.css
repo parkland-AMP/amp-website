@@ -37,3 +37,36 @@
 	display: inline-block;
 	margin: 5px;
 }
+
+.list-kill{
+	list-style-type: none;
+	margin-left: 0;
+}
+
+.view-mem{
+	border: 2px solid black;
+	height: 220px;
+	width: 130px;
+	text-align: center;
+}
+
+.img-mem{
+	height: 100px;
+	width: 100px;
+	border-radius: 50px;
+	background: gray;
+	margin-top: 25;
+	
+}
+
+.img-mem-wrap{
+	vertical-align: center;
+}
+
+.center{
+	text-align: center;
+}
+
+.block{
+	display: inline-block;
+}
