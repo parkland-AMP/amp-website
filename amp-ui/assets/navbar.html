@@ -2,9 +2,11 @@
 	<nav class="navbar navbar-inverse">
 		<div class="container">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="#">
-					<img ng-show="{{main}}" alt="Parkland" src="#">
-					<img ng-hide="{{main}}" alt="AMP" ui-sref='landing'>
+				<a ng-show="{{main}}" class="navbar-brand" href="#">
+					<img  alt="Parkland" src="#">
+				</a>
+				<a ng-hide="{{main}}" class="navbar-brand" ui-sref='landing'>
+					<img class="nav-logo"  alt="AMP" src="../../assets/logo.jpg" >
 				</a>
 			</div>
 			<ul class="nav navbar-nav">
