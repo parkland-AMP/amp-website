@@ -1,0 +1,27 @@
+<div class="container" ng-controller="PortCtrl">
+	<ng-include src="'../../assets/header.html'"></ng-include>
+	
+	<h1>{{title}}</h1>
+	
+	<p>
+		AMP provides clients with strategic solutions to promotional challenges related to:
+	</p>
+	
+	<ul>
+		<li>Branding and rebranding</li>
+		<li>Event planning and promotion</li>
+		<li>Advertisement creation</li>
+		<li>Media relations</li>
+	</ul>
+	
+	<p>Click <a ng-click='toggle()'>here</a> to see samples of our work.</p>
+	<br>
+	<section ng-show="project" class="row center">
+		<div class="block project-view">PEN</div>
+		<div class="block project-view">Presentation</div>
+		<div class="block project-view">Study Abroad</div>
+		<br>
+		<div class="block project-view">EST</div>
+		<div class="block project-view">PCTV</div>
+	</section>
+</div>
