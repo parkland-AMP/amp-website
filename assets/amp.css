@@ -1,3 +1,7 @@
+body {
+  position: relative;
+}
+
 .banner{
 	background: #ffd400;
 	width: 100%;
@@ -67,6 +71,37 @@
 	text-align: center;
 }
 
+.project-view{
+	background: black;
+	border: 1px solid black;
+	height: 100px;
+	width: 100px;
+	margin-left: 110px;
+	margin-bottom: 100px;
+	color: white;
+}
+
 .block{
 	display: inline-block;
+}
+
+.nav-logo{
+	width: 90px;
+	height: 25px;
+}
+
+.flex{
+	display: inline-flex;
+}
+
+nav div ul li button{
+	margin-left: 10px;
+}
+
+.text-lg{
+	height: 50px;
+}
+
+.end-sec{
+	margin-bottom: 50px;
 }

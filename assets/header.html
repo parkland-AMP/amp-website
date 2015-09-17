@@ -1,0 +1,35 @@
+<nav ng-controller="NavCtrl" class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a ng-show="{{main}}" class="navbar-brand" href="#">
+					<img  alt="Parkland" src="#">
+				</a>
+				<a ng-hide="{{main}}" class="navbar-brand">
+					<img class="nav-logo"  alt="AMP" src="../../assets/logo.jpg" >
+				</a>
+			</div>
+			<div id="menubar">
+			<ul class="nav navbar-nav" id="menubar">
+				<li><a href="#Meet">Meet The Team</a></li>
+				<li><a href="#Portfolio">Portfolio</a></li>
+				<li><a href="#Project">Start A Project</a></li>
+			</ul>
+			</div>
+			<ul class="nav navbar-nav navbar-right">
+					<li><button type="button" class="btn btn-success navbar-btn" ng-click="openC()">Contact Us</button></li>
+					<li><button type="button" class="btn btn-info navbar-btn" ng-click="openJ()" href="#">Join Us</button></li>
+				</ul>
+		</div>
+	</nav>
+	
+    <section ng-controller="SlideCtrl">  
+	<carousel interval="myInterval" no-wrap="noWrapSlides">
+      <slide ng-repeat="slide in slides" active="slide.active">
+        <img ng-src="{{slide.image}}" style="margin:auto;">
+        <div class="carousel-caption">
+          <h4>Slide {{$index}}</h4>
+          <p>{{slide.text}}</p>
+        </div>
+      </slide>
+    </carousel>
+	</section>
