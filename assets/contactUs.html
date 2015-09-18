@@ -1,22 +1,18 @@
 <script type="text/ng-template" id="ContactUs">
         <div class="modal-header">
-            <h3 class="modal-title">Contact Us</h3>
+            <h2 class="modal-title">Contact Us</h2>
         </div>
-        <div class="modal-body">
-			<form>
-			  <div class="form-group">
-				<label for="Name">Name</label>
-				<input type="text" class="form-control" id="Name" placeholder="Name">
-			  </div>
-			  <div class="form-group">
-				<label for="Email">Email Address</label>
-				<input type="email" class="form-control" id="Email1" placeholder="Email">
-			  </div>
-			  <div class="form-group">
-				<label for="Message">Message</label>
-				<input type="text" class="form-control text-lg" id="Message" placeholder="Your Message Here...">
-			  </div>
-            </form>
+        <div class="modal-body row">
+			<section class="col-md-6 pull-left">
+			<h3>Cindy Smith, <small>Coordinator</small></h3>
+			<p>csmith@parkland.edu</p>
+			<p>(217) 351-2270</p>
+			</section>
+			<section class="col-md-6 pull-right">
+			<h3>Kendra McClure, <small>Faculty Advisor</small></h3>
+			<p>kmcclure@parkland.edu</p>
+			<p>(217) 353-2698</p>
+			</section>
         </div>
         <div class="modal-footer">
             <button class="btn btn-primary" type="button" ng-click="ok()">OK</button>
