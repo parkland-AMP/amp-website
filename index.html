@@ -1,6 +1,8 @@
 <html ng-app="amp">
 <head>
-<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css" />
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="assets/amp.css" />
 <link rel="icon" href="assets/favicons/favicon.ico" />
 
@@ -11,33 +13,44 @@
 
 <ng-include src="'assets/contactUs.html'"></ng-include>
 <ng-include src="'assets/joinUs.html'"></ng-include>
-
 </head>
-<body data-spy="scroll" data-target=".navbar-nav">
-	<nav ng-controller="NavCtrl" class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container">
-			<div class="navbar-header">
-				<a ng-show="{{main}}" class="navbar-brand" href="#">
-					<img  alt="Parkland" src="#">
-				</a>
-				<a ng-hide="{{main}}" class="navbar-brand">
-					<img class="nav-logo"  alt="AMP" src="assets/logo.jpg" >
-				</a>
-			</div>
-			<ul class="nav navbar-nav">
-				<li><a href="#Meet">Meet The Team</a></li>
-				<li><a href="#Portfolio">Portfolio</a></li>
-				<li><a href="#Project">Start A Project</a></li>
-			</ul>
-			
-			<ul class="nav navbar-nav navbar-right">
-					<li><button type="button" class="btn btn-success navbar-btn" ng-click="openC()">Contact Us</button></li>
-					<li><button type="button" class="btn btn-info navbar-btn" ng-click="openJ()" href="#">Join Us</button></li>
-				</ul>
-		</div>
-	</nav>
-	
-    <section ng-controller="SlideCtrl">  
+<body>
+
+<nav ng-controller="NavCtrl" class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>                        
+			</button>
+		<a ng-show="{{main}}" class="navbar-brand" href="#">
+			<img  alt="Parkland" src="#">
+		</a>
+		<a ng-hide="{{main}}" class="navbar-brand">
+			<img class="nav-logo"  alt="AMP" src="assets/logo.jpg" >
+		</a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+			<li><a href="#portfolio">Portfolio</a></li>
+			<li><a href="#meet">Meet The Team</a></li>
+			<li><a href="#project">Start A Project</a></li>
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+          <li><button type="button" class="btn btn-success navbar-btn" ng-click="openC()">Contact Us</button></li>
+			<li><button type="button" class="btn btn-info navbar-btn" ng-click="openJ()" href="#">Join Us</button></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>    
+<!-- Carosel -->
+
+<section class="center" ng-controller="SlideCtrl">  
 	<carousel interval="myInterval" no-wrap="noWrapSlides">
       <slide ng-repeat="slide in slides" active="slide.active">
         <img ng-src="{{slide.image}}" style="margin:auto;">
@@ -48,8 +61,10 @@
       </slide>
     </carousel>
 	</section>
+	
+<!-- Portfolio -->
 
-	<div id="Portfolio">
+<div id="portfolio">
 	
 		<section class="page-header title-wrap container">
 			<h1>Portfolio</h1>
@@ -95,7 +110,9 @@
 	
 	</div>
 
-	<div id="Meet">
+<!-- Meet -->
+
+<div id="meet">
 	<section class="page-header title-wrap container">
 		<h1 class="pull-right">Meet The Team</h1>
 	</section>
@@ -120,7 +137,8 @@
 	
 	</div>
 
-	<div id="Project">
+<!-- Project -->
+<div id="project">
 	<section class="page-header title-wrap container">
 		<h1>Start a Project</h1>
 	</section>
