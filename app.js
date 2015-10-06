@@ -1,13 +1,5 @@
 var app = angular.module('amp', ['ui.bootstrap', 'ngAnimate']);
 
-app.controller('ScrollCtrl', function($scope, $location, $anchorScroll) {
-  $scope.scrollTo = function(id) {
-    $location.hash(id);
-    console.log($location.hash());
-    $anchorScroll();
-  };
-});
-
 app.controller('NavCtrl', function ($scope, $modal, $log) {
 	
 	$scope.meet = '#/'+'#meet';

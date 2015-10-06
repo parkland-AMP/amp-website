@@ -2,6 +2,32 @@ body {
   position: relative;
 }
 
+a{
+	color: #ffd400;
+}
+
+div section h1 a{
+	color: #a7a9ac;
+}
+
+.page-header{
+	border-bottom: 1px solid #ffd400;
+}
+
+.background{
+	background: #4d4d4f;
+	padding-top: 15px;
+}
+
+.panel{
+	border: 2px solid transparent;
+	
+}
+
+.panel-default{
+	border-color: #ffd400;
+}
+
 .page-header{
 	margin: 20px 0 20px;
 }
@@ -11,7 +37,9 @@ body {
 	width: 100%;
 	height: 150px;
 	padding-top: 20px;
+/*
 	margin-bottom: 15px;
+*/
 }
 
 .banner-bdy{
@@ -52,7 +80,9 @@ body {
 }
 
 .view-mem{
+/*
 	border: 2px solid black;
+*/
 	height: 220px;
 	width: 130px;
 	text-align: center;
