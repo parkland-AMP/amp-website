@@ -1,13 +1,17 @@
 var app = angular.module('amp', ['ui.bootstrap', 'ngAnimate']);
 
 app.controller('NavCtrl', function ($scope, $modal, $log) {
-
+	
+	$scope.meet = '#/'+'#meet';
+	$scope.portfolio = '#/'+'#portfolio';
+	$scope.project = '#/'+'#project';
+	
   $scope.openC = function () {
 
     var modalInstance = $modal.open({
       animation: true,
       templateUrl: 'ContactUs',
-      controller: 'ModalInstanceCtrl'
+      controller: 'ModalCtrl'
     });
 
     modalInstance.result.then(function () {
@@ -20,7 +24,7 @@ app.controller('NavCtrl', function ($scope, $modal, $log) {
     var modalInstance = $modal.open({
       animation: true,
       templateUrl: 'JoinUs',
-      controller: 'ModalInstanceCtrl'
+      controller: 'ModalCtrl'
     });
 
     modalInstance.result.then(function () {
@@ -37,7 +41,7 @@ app.controller('NavCtrl', function ($scope, $modal, $log) {
 // Please note that $modalInstance represents a modal window (instance) dependency.
 // It is not the same as the $modal service used above.
 
-angular.module('ui.bootstrap').controller('ModalInstanceCtrl', function ($scope, $modalInstance) {
+app.controller('ModalCtrl', function ($scope, $modalInstance) {
 
   $scope.ok = function () {
     $modalInstance.close();
