@@ -8,6 +8,11 @@
 <script type="text/javascript" src="https://code.angularjs.org/1.4.7/angular-animate.js"></script>
 <script type="text/javascript" src="assets/components/js/ui-bootstrap-tpls-0.13.0.js"></script>
 <script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="assets/components/js/smooth-scroll.js"></script>
+
+
+
 
 <ng-include src="'assets/contactUs.html'"></ng-include>
 <ng-include src="'assets/joinUs.html'"></ng-include>
@@ -40,9 +45,9 @@
     <div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-			<li><a ng-href="{{portfolio}}">Portfolio</a></li>
-			<li><a ng-href="{{meet}}">Meet The Team</a></li>
-			<li><a ng-href="{{project}}">Start A Project</a></li>
+			<li><a ng-href="#portfolio">Portfolio</a></li>
+			<li><a ng-href="#meet">Meet The Team</a></li>
+			<li><a ng-href="#project">Start A Project</a></li>
 		</ul>
 		<ul class="nav navbar-nav navbar-right">
           <li><button type="button" class="btn btn-success navbar-btn" ng-click="openC()">Contact Us</button></li>
