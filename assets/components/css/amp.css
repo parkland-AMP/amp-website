@@ -199,32 +199,3 @@ nav div ul li button{
     display: none !important;
   }
 }
-/**
- * Junk for a demo page
- */
-body {
-  background: #eee ;
-  font-family: 'Open Sans', sans-serif;
-}
-h3 {
-  font-size: 30px;
-  font-weight: 400;
-  text-align: center;
-  margin-top: 50px;
-}
-h3 i {
-  color: #444;
-}
-.alert {
-  margin: 25px 25% 0 25%;
-}
-@media (max-width: 768px) {
-  .alert.alert-info {
-    display: none !important;
-  }
-}
-@media (min-width: 768px) {
-  .alert.alert-warning {
-    display: none !important;
-  }
-}
