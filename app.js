@@ -1,47 +1,39 @@
 var app = angular.module('amp', ['ui.bootstrap', 'ngAnimate']);
 
-app.controller('NavCtrl', function ($scope, $modal, $log) {
-	
-	$scope.meet = '#/'+'#meet';
-	$scope.portfolio = '#/'+'#portfolio';
-	$scope.project = '#/'+'#project';
-	
+app.controller('NavCtrl', function ($scope, $uibModal, $log) {
+
   $scope.openC = function () {
 
-    var modalInstance = $modal.open({
+    var modalInstance = $uibModal.open({
       animation: true,
       templateUrl: 'ContactUs',
-      controller: 'ModalCtrl'
+      controller: 'ModalInstanceCtrl',
     });
 
     modalInstance.result.then(function () {
-      $log.info('Contact modal dismissed at: ' + new Date());
+      $log.info('Modal dismissed at: ' + new Date());
     });
   };
 
   $scope.openJ = function () {
 
-    var modalInstance = $modal.open({
+    var modalInstance = $uibModal.open({
       animation: true,
       templateUrl: 'JoinUs',
-      controller: 'ModalCtrl'
+      controller: 'ModalInstanceCtrl',
     });
 
     modalInstance.result.then(function () {
-      $log.info('Join modal dismissed at: ' + new Date());
+      $log.info('Modal dismissed at: ' + new Date());
     });
-  };
-
-  $scope.toggleAnimation = function () {
-    $scope.animationsEnabled = !$scope.animationsEnabled;
   };
 
 });
 
 // Please note that $modalInstance represents a modal window (instance) dependency.
-// It is not the same as the $modal service used above.
+// It is not the same as the $uibModal service used above.
 
-app.controller('ModalCtrl', function ($scope, $modalInstance) {
+app.controller('ModalInstanceCtrl', function ($scope, $modalInstance) {
 
   $scope.ok = function () {
     $modalInstance.close();
@@ -51,6 +43,7 @@ app.controller('ModalCtrl', function ($scope, $modalInstance) {
     $modalInstance.dismiss('cancel');
   };
 });
+
 
 app.controller('SlideCtrl', function ($scope) {
   $scope.myInterval = 3000;
