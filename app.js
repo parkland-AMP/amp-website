@@ -2,11 +2,14 @@ var app = angular.module('amp', ['ui.bootstrap', 'ngAnimate']);
 
 app.controller('NavCtrl', function ($scope, $uibModal, $log) {
 
-  $scope.openC = function () {
+    $scope.open = function (mdl) {
+      tmplUrl ='';
+      if(mdl == "c"){tmplUrl ='ContactUs';}
+      else if(mdl == "j"){ tmplUrl = 'JoinUs';}
 
     var modalInstance = $uibModal.open({
       animation: true,
-      templateUrl: 'ContactUs',
+      templateUrl: tmplUrl,      
       controller: 'ModalInstanceCtrl',
     });
 
@@ -15,18 +18,6 @@ app.controller('NavCtrl', function ($scope, $uibModal, $log) {
     });
   };
 
-  $scope.openJ = function () {
-
-    var modalInstance = $uibModal.open({
-      animation: true,
-      templateUrl: 'JoinUs',
-      controller: 'ModalInstanceCtrl',
-    });
-
-    modalInstance.result.then(function () {
-      $log.info('Modal dismissed at: ' + new Date());
-    });
-  };
 
 });
 
