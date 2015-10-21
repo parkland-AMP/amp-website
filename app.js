@@ -1,7 +1,10 @@
 var app = angular.module('amp', ['ui.bootstrap', 'ngAnimate']);
 
+
+
 app.controller('NavCtrl', function ($scope, $uibModal, $log) {
 
+   
     $scope.open = function (mdl) {
       tmplUrl ='';
       if(mdl == "c"){tmplUrl ='ContactUs';}
@@ -26,8 +29,25 @@ app.controller('NavCtrl', function ($scope, $uibModal, $log) {
 
 app.controller('ModalInstanceCtrl', function ($scope, $modalInstance) {
 
-  $scope.ok = function () {
-    $modalInstance.close();
+  $scope.user = {name: 'Name', email: 'Email', message: 'Your message here'};
+  //var flag = true;
+
+  $scope.ok = function (form) {
+    
+    if (form.$invalid) {
+      console.log("INVALID");
+      //flag = false;
+  }
+
+    
+    //console.log(name)
+
+    if(form.$valid){
+
+      $modalInstance.close();
+    }
+
+    
   };
 
   $scope.cancel = function () {
