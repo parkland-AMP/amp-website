@@ -30,6 +30,13 @@
       			<span class="error" ng-show="joinUsForm.Email.$error.required">Email required</span>
       			<span class="error" ng-show="joinUsForm.Email.$error.email">Valid email required
     		  </div>
+    		  <div class="form-group">
+				<label for="Message">Subject</label>
+				<input type="text" class="form-control" ng-model="user.subject" name="Subject"  required>
+			  </div>
+			  <div role="alert">
+      			<span class="error" ng-show="joinUsForm.Message.$error.required">Required!</span>
+    		  </div>
 			  <div class="form-group">
 				<label for="Message">Message</label>
 				<input type="text" class="form-control text-lg" ng-model="user.message" name="Message" placeholder="Your Message Here..." required>

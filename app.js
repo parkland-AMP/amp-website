@@ -29,7 +29,7 @@ app.controller('NavCtrl', function ($scope, $uibModal, $log) {
 
 app.controller('ModalInstanceCtrl', function ($scope, $modalInstance) {
 
-  $scope.user = {name: 'Name', email: 'Email', message: 'Your message here'};
+  $scope.user = {name: 'Name', email: 'Email', message: 'Your message here', subject: ''};
   //var flag = true;
 
   $scope.ok = function (form) {
