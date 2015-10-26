@@ -1,0 +1,89 @@
+<html ng-app="amp">
+<head>
+<title>About Us</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+<link rel="stylesheet" href="../../assets/components/css/amp.css" />
+<link rel="icon" href="assets/imgs/favicons/favicon.ico" />
+
+<script type="text/javascript" src="https://code.angularjs.org/1.4.7/angular.js"></script>
+<script type="text/javascript" src="https://code.angularjs.org/1.4.7/angular-animate.js"></script>
+<script type="text/javascript" src="../../assets/components/js/ui-bootstrap14.min.js"></script>
+<script type="text/javascript" src="../../app.js"></script>
+
+<ng-include src="'../../assets/components/html/contactUs.html'"></ng-include>
+</head>
+<body>
+
+<!-- <object type="text/html" width="100%" data="assets/navbar.html"></object>
+ --><div ng-controller="NavCtrl">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div style="background: white;"class="container-fluid">
+	<section class="row">
+		<div class="col-md-12">
+			<a href="https://www.linkedin.com/grps/Applied-Media-Promotions-AMP-Parkland-8317100/about">
+		        <img alt="icon" class="sm-badge pull-right" src="../../assets/imgs/linkin.jpg">
+		    </a>
+			<a href="https://www.facebook.com/AMP.at.PC?fref=nf">
+				<img alt="icon" class="sm-badge pull-right" src="../../assets/imgs/fbico.jpg">
+        	</a>
+		</div>
+	</section>
+</div>
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>                        
+			</button>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+        	<li><a href="../../index.html">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="../service/service.html">Services</a></li>
+			<li><a href="../join/join.html">Join</a></li>
+			<li><a href="../portfolio/portfolio.html">Portfolio</a></li>
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+          <li><button type="button" class="btn btn-success navbar-btn" ng-click="openC()">Contact Us</button></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>    
+</div>
+
+<div class="container">
+	
+	<section class="page-header title-wrap container-fluid">
+		<h1>About Us</h1>
+	</section>
+	
+	<section class="row">
+		<h2>Applied Media Promotions</h2>
+	</section>
+	<section class="row">
+		<p class="col-md-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean risus nibh, sodales non facilisis id, suscipit sed tellus. Nam sollicitudin lorem ut lectus vulputate lobortis. Sed iaculis volutpat quam, ac dapibus tortor scelerisque ut. Maecenas accumsan fringilla ipsum, non ornare justo lacinia quis. Integer posuere nisl non bibendum rhoncus. Proin in molestie enim. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras sed posuere sem. Curabitur dui sapien, consectetur ac tincidunt in, vestibulum sed lorem. Proin tempus leo maximus bibendum tempus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vitae tellus urna. Aliquam condimentum, lacus ac scelerisque auctor, odio lorem rhoncus nulla, a ultricies odio diam in diam.</p>
+		<img class="col-md-4" src="http://lorempixel.com/280/180/abstract/">
+	</section>
+	<section class="row col-md-12">
+		<h2 class="pull-right">Our Mission</h2>
+	</section>
+	<section>
+		<p>Pellentesque ut fringilla leo. Curabitur ac placerat sem. Pellentesque hendrerit condimentum lacinia. Proin et magna quam. Duis non dui imperdiet, feugiat eros sit amet, tempus orci. Sed ultricies elit odio, at imperdiet nulla condimentum vel. Donec blandit nulla at suscipit pellentesque. Duis pharetra tempor est sit amet imperdiet. Aenean est purus, pharetra id lectus nec, laoreet tincidunt diam. Nam scelerisque aliquet metus, ultrices facilisis risus gravida eget. Fusce ut nulla iaculis, condimentum risus non, elementum ipsum. Nulla enim neque, aliquet in tortor ut, tincidunt porttitor nunc. Etiam tristique orci non hendrerit semper. Maecenas massa metus, consequat id arcu in, iaculis ultrices felis. Duis varius turpis in ipsum pharetra tristique.</p>
+	</section>
+	<section>
+		<h2>Our History</h2>
+		<p>Cras at aliquet augue. Sed a placerat quam. Proin maximus eu neque sed semper. Morbi eget mattis purus, id placerat neque. Sed nec tortor sed erat ultricies tincidunt. Morbi id sem non mauris consequat rutrum sit amet sit amet nisi. Vivamus eu tincidunt odio. Aliquam erat volutpat. Vivamus et neque vitae ipsum maximus rhoncus. Nulla quis varius augue. Morbi ac risus velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc tortor eros, pulvinar sed vehicula vel, maximus sit amet metus. Cras scelerisque fringilla velit ac vehicula.</p>
+	</section>
+
+</div>
+<object type="text/html" width="100%" data="../../assets/components/html/footer.html"></object>
+
+</body>
+</html>
