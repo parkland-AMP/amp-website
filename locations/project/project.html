@@ -1,0 +1,72 @@
+<html ng-app="amp">
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+<link rel="stylesheet" href="../../assets/components/css/amp.css" />
+<link rel="icon" href="assets/imgs/favicons/favicon.ico" />
+
+<script type="text/javascript" src="https://code.angularjs.org/1.4.7/angular.js"></script>
+<script type="text/javascript" src="https://code.angularjs.org/1.4.7/angular-animate.js"></script>
+<script type="text/javascript" src="../../assets/components/js/ui-bootstrap14.min.js"></script>
+<script type="text/javascript" src="../../app.js"></script>
+
+<ng-include src="'../../assets/components/html/contactUs.html'"></ng-include>
+</head>
+<body>
+
+<!-- <object type="text/html" width="100%" data="assets/navbar.html"></object>
+ --><div ng-controller="NavCtrl">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>                        
+			</button>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+        	<li><a href="../../index.html">Home</a></li>
+			<li><a href="../about/about.html">About</a></li>
+			<li><a href="../service/service.html">Services</a></li>
+			<li><a href="../join/join.html">Join</a></li>
+			<li><a href="../portfolio/portfolio.html">Portfolio</a></li>
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+          <li><button type="button" class="btn btn-success navbar-btn" ng-click="openC()">Contact Us</button></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>    
+</div>
+
+<div class="container" ng-controller="ProjCtrl">
+	
+	<h1>{{title}}</h1>
+	
+	<p>
+		Interested in hiring AMP to work for you? 
+	</p>
+	<p>
+		Click <a href="#">here</a> to submit a Project Proposal Form. 
+	</p>
+	<p>
+		We are happy to accept proposals from students, faculty, and staff associated with Parkland College 
+		and any not-for-profit organization in the Champaign-Urbana area. We are unable to work with for-
+		profit businesses at this time.
+	</p>
+	<p>
+		Preference is given to proposals that encourage students to think strategically. Projects that require 
+		students to develop comprehensive promotional plans within 16 week semesters are ideal.
+	</p>
+
+</div>
+<object type="text/html" width="100%" data="../../assets/components/html/footer.html"></object>
+
+</body>
+</html>

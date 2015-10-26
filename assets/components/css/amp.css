@@ -1,5 +1,5 @@
 body {
-  position: relative;
+  padding-top: 100px; 
 }
 
 a{
@@ -8,6 +8,12 @@ a{
 
 div section h1 a{
 	color: black;
+}
+
+.footer{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
 }
 
 .amp-btn-w{
@@ -19,9 +25,9 @@ div section h1 a{
 }
 
 .background{
-	background: #4d4d4f;
+	/*background: #4d4d4f;
 	padding-top: 15px;
-}
+*/}
 
 .panel{
 	border: 2px solid transparent;
@@ -41,9 +47,9 @@ div section h1 a{
 	width: 100%;
 	height: 150px;
 	padding-top: 20px;
-/*
-	margin-bottom: 15px;
-*/
+
+	/*margin-bottom: 15px;*/
+
 }
 
 .banner-bdy{
@@ -53,14 +59,14 @@ div section h1 a{
 	text-align: center;
 }
 
+.banner-bdy p{
+	margin: 0;
+}
+
 .spl-logo{
 	height: 400px;
 	width: 600px;
-	
-}
-
-.ctr-hold{
-	text-align: center;
+	margin-top: 39px;
 }
 
 .logo-hold{
@@ -142,64 +148,4 @@ nav div ul li button{
 
 .end-sec{
 	margin-bottom: 50px;
-}
-
-/**
- * Elevator - Scroll back to top utility CSS
- */
-.elevator {
-  display: inline-block;
-  height: 48px;
-  width: 48px;
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-  overflow: hidden;
-  white-space: nowrap;
-  cursor: pointer;
-  border-radius: 50%;
-  text-decoration: none;
-  background-image: none;
-  background: rgba(0, 0, 0, 0.7);
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  visibility: hidden;
-  opacity: 0;
-}
-.elevator.elevator-is-visible {
-  /* the button becomes visible */
-  visibility: visible;
-  opacity: 1;
-  z-index: 999;
-}
-.elevator .fa {
-  color: white;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  left: 14.5px;
-  top: 12.5px;
-  font-size: 20px;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-.elevator:hover {
-  background: rgba(0, 0, 0, 0.8);
-}
-.elevator:hover .fa {
-  color: white;
-  top: 5px;
-}
-@media (max-width: 768px) {
-  .elevator {
-    /* only show elevator on desktop screen */
-    display: none !important;
-  }
 }

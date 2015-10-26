@@ -1,0 +1,92 @@
+<html ng-app="amp">
+<head>
+<title>Portfolio</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+<link rel="stylesheet" href="../../assets/components/css/amp.css" />
+<link rel="icon" href="assets/imgs/favicons/favicon.ico" />
+
+<script type="text/javascript" src="https://code.angularjs.org/1.4.7/angular.js"></script>
+<script type="text/javascript" src="https://code.angularjs.org/1.4.7/angular-animate.js"></script>
+<script type="text/javascript" src="../../assets/components/js/ui-bootstrap14.min.js"></script>
+<script type="text/javascript" src="../../app.js"></script>
+
+<ng-include src="'../../assets/components/html/contactUs.html'"></ng-include>
+</head>
+<body>
+
+<!-- <object type="text/html" width="100%" data="assets/navbar.html"></object> -->
+<div ng-controller="NavCtrl">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div style="background: white;"class="container-fluid">
+	<section class="row">
+		<div class="col-md-12">
+			<a href="https://www.linkedin.com/grps/Applied-Media-Promotions-AMP-Parkland-8317100/about">
+		        <img alt="icon" class="sm-badge pull-right" src="../../assets/imgs/linkin.jpg">
+		    </a>
+			<a href="https://www.facebook.com/AMP.at.PC?fref=nf">
+				<img alt="icon" class="sm-badge pull-right" src="../../assets/imgs/fbico.jpg">
+        	</a>
+		</div>
+	</section>
+</div>
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>                        
+			</button>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+        	<li><a href="../../index.html">Home</a></li>
+			<li><a href="../about/about.html">About</a></li>
+			<li><a href="../service/service.html">Services</a></li>
+			<li><a href="../join/join.html">Join</a></li>
+			<li><a href="#">Portfolio</a></li>
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+          <li><button type="button" class="btn btn-success navbar-btn" ng-click="openC()">Contact Us</button></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>    
+</div>
+
+<div class="container" ng-controller="MainCtrl">
+	
+<section class="page-header title-wrap container-fluid">
+	<h1>Portfolio</h1>
+</section>
+
+	<p>
+		AMP provides clients with strategic solutions to promotional challenges related to:
+	</p>
+	
+	<ul>
+		<li>Branding and rebranding</li>
+		<li>Event planning and promotion</li>
+		<li>Advertisement creation</li>
+		<li>Media relations</li>
+	</ul>
+	
+	<p>Click <a ng-click='toggle()'>here</a> to see samples of our work.</p>
+	<br>
+	<section class="row center">
+		<div class="block project-view">PEN</div>
+		<div class="block project-view">Presentation</div>
+		<div class="block project-view">Study Abroad</div>
+		<br>
+		<div class="block project-view">EST</div>
+		<div class="block project-view">PCTV</div>
+	</section>
+</div>
+<object type="text/html" width="100%" data="../../assets/components/html/footer.html"></object>
+
+</body>
+</html>

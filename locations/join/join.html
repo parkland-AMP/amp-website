@@ -1,16 +1,16 @@
 <html ng-app="amp">
 <head>
-<title>Home</title>
+<title>Join</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
-<link rel="stylesheet" href="assets/components/css/amp.css" />
+<link rel="stylesheet" href="../../assets/components/css/amp.css" />
 <link rel="icon" href="assets/imgs/favicons/favicon.ico" />
 
 <script type="text/javascript" src="https://code.angularjs.org/1.4.7/angular.js"></script>
 <script type="text/javascript" src="https://code.angularjs.org/1.4.7/angular-animate.js"></script>
-<script type="text/javascript" src="assets/components/js/ui-bootstrap14.min.js"></script>
-<script type="text/javascript" src="/app.js"></script>
+<script type="text/javascript" src="../../assets/components/js/ui-bootstrap14.min.js"></script>
+<script type="text/javascript" src="../../app.js"></script>
 
-<ng-include src="'assets/components/html/contactUs.html'"></ng-include>
+<ng-include src="'../../assets/components/html/contactUs.html'"></ng-include>
 </head>
 <body>
 
@@ -22,10 +22,10 @@
 	<section class="row">
 		<div class="col-md-12">
 			<a href="https://www.linkedin.com/grps/Applied-Media-Promotions-AMP-Parkland-8317100/about">
-		        <img alt="icon" class="sm-badge pull-right" src="assets/imgs/linkin.jpg">
+		        <img alt="icon" class="sm-badge pull-right" src="../../assets/imgs/linkin.jpg">
 		    </a>
 			<a href="https://www.facebook.com/AMP.at.PC?fref=nf">
-				<img alt="icon" class="sm-badge pull-right" src="assets/imgs/fbico.jpg">
+				<img alt="icon" class="sm-badge pull-right" src="../../assets/imgs/fbico.jpg">
         	</a>
 		</div>
 	</section>
@@ -41,11 +41,11 @@
     <div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-        	<li><a href="#">Home</a></li>
-			<li><a href="locations/about/about.html">About</a></li>
-			<li><a href="locations/service/service.html">Services</a></li>
-			<li><a href="locations/join/join.html">Join</a></li>
-			<li><a href="locations/portfolio/portfolio.html">Portfolio</a></li>
+        	<li><a href="../../index.html">Home</a></li>
+			<li><a href="../about/about.html">About</a></li>
+			<li><a href="../service/service.html">Services</a></li>
+			<li><a href="#">Join</a></li>
+			<li><a href="../portfolio/portfolio.html">Portfolio</a></li>
 		</ul>
 		<ul class="nav navbar-nav navbar-right">
           <li><button type="button" class="btn btn-success navbar-btn" ng-click="openC()">Contact Us</button></li>
@@ -60,13 +60,22 @@
 
 <div class="container">
 	
-	<section class="center">
-		<img class="spl-logo" src="assets/imgs/logo.jpg">
+	<section class="page-header title-wrap container-fluid">
+		<h1>Join Us</h1>
 	</section>
+	
+	<p>
+		AMP welcomes all Parkland students with an interest gaining hands-on promotional experience. We 
+		look for strategic thinkers who are ready to take the skills they’re learning in the classroom to the next 
+		level. Compensation options are available.
+	</p>
+	<p>
+		Interested in joining us? Submit an application <a href="#">here</a>.
+	</p>
 
 </div>
 
-<object class="footer" type="text/html" width="100%" data="assets/components/html/footer.html"></object>
+<object class="footer" type="text/html" width="100%" data="../../assets/components/html/footer.html"></object>
 
 </body>
 </html>
