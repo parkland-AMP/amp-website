@@ -1,5 +1,5 @@
 app
-	.controller('TeamCtrl', function($scope){
+	.controller('SerCtrl', function($scope){
 		$scope.title = 'Meet the Team';
 		$scope.small;
 
