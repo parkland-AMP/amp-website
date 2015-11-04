@@ -2,7 +2,7 @@ var app = angular.module('amp', ['ui.bootstrap', 'ngAnimate']);
 
 app.controller('NavCtrl', function ($scope, $uibModal, $log) {
 
-  $scope.openC = function () {
+  $scope.open = function () {
 
     var modalInstance = $uibModal.open({
       animation: true,
@@ -19,8 +19,17 @@ app.controller('NavCtrl', function ($scope, $uibModal, $log) {
 
 app.controller('ModalInstanceCtrl', function ($scope, $modalInstance) {
 
-  $scope.ok = function () {
-    $modalInstance.close();
+  $scope.ok = function (form) {
+    if (form.$invalid) {
+      console.log("INVALID");
+      //flag = false;
+    }
+
+  //console.log(name)
+
+    if(form.$valid){
+      $modalInstance.close();
+   }
   };
 
   $scope.cancel = function () {
