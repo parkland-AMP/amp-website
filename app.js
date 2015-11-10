@@ -41,23 +41,38 @@ app.controller('MainCtrl', function ($scope){
 
   $scope.projects = [
     {name:'Wesley Food Pantry', 
-    info:'Wesley Food Pantry asked AMP to update their logo and raise awareness of their new satellite location on Parkland’s campus. AMP created print and digital advertising material, updated social media graphics, and wrote a radio public service announcement.', 
+    info:'Wesley Food Pantry asked AMP to update their logo and raise awareness of \
+     their new satellite location on Parkland\'s campus.\
+      AMP created print and digital advertising material, updated social media graphics,\
+       and wrote a radio public service announcement.', 
     img:'http://lorempixel.com/280/180/abstract/'},
 
     {name:'Illinois Radio Reader',
-    info:'Wesley Food Pantry asked AMP to update their logo and raise awareness of their new satellite location on Parkland’s campus. AMP created print and digital advertising material, updated social media graphics, and wrote a radio public service announcement.', 
+    info:'Wesley Food Pantry asked AMP to update their logo and raise awareness of \
+     their new satellite location on Parkland\'s campus.\
+      AMP created print and digital advertising material, updated social media graphics,\
+       and wrote a radio public service announcement.',
     img:'http://lorempixel.com/280/180/abstract/'},
 
     {name:'The Bottom Line Diaper Bank',
-    info:'Wesley Food Pantry asked AMP to update their logo and raise awareness of their new satellite location on Parkland’s campus. AMP created print and digital advertising material, updated social media graphics, and wrote a radio public service announcement.', 
+    info:'Wesley Food Pantry asked AMP to update their logo and raise awareness of \
+     their new satellite location on Parkland\'s campus.\
+      AMP created print and digital advertising material, updated social media graphics,\
+       and wrote a radio public service announcement.',
     img:'http://lorempixel.com/280/180/abstract/'},
 
     {name:'The Presentation Center at Parkland College',
-    info:'Wesley Food Pantry asked AMP to update their logo and raise awareness of their new satellite location on Parkland’s campus. AMP created print and digital advertising material, updated social media graphics, and wrote a radio public service announcement.', 
+    info:'Wesley Food Pantry asked AMP to update their logo and raise awareness of \
+     their new satellite location on Parkland\'s campus.\
+      AMP created print and digital advertising material, updated social media graphics,\
+       and wrote a radio public service announcement.',
     img:'http://lorempixel.com/280/180/abstract/'},
 
     {name:'Parkland Entrepreneurial Network',
-    info:'Wesley Food Pantry asked AMP to update their logo and raise awareness of their new satellite location on Parkland’s campus. AMP created print and digital advertising material, updated social media graphics, and wrote a radio public service announcement.', 
+    info:'Wesley Food Pantry asked AMP to update their logo and raise awareness of \
+     their new satellite location on Parkland\'s campus.\
+      AMP created print and digital advertising material, updated social media graphics,\
+       and wrote a radio public service announcement.',
     img:'http://lorempixel.com/280/180/abstract/'}
   ]
   
