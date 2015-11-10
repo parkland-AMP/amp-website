@@ -10,6 +10,26 @@ div section h1 a{
 	color: black;
 }
 
+.btn-default{
+	background: #ffd400;
+	font-weight: 700;
+	font-size: 20px;
+	color: black;
+}
+
+
+h1, h2, h3, h4, h5, h6, p, b, a{
+	font-family: 'Lato', sans-serif;
+}
+
+h1{
+	font-weight: 700;
+}
+
+p{
+	font-weight: 400;
+}
+
 .footer{
 	position: fixed;
 	bottom: 0;
@@ -149,3 +169,8 @@ nav div ul li button{
 .end-sec{
 	margin-bottom: 50px;
 }
+
+.shadow {
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, .14), 0 6px 30px 5px rgba(0, 0, 0, .12), 0 8px 10px -5px rgba(0, 0, 0, .2)
+}
+
