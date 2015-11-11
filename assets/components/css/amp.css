@@ -179,7 +179,14 @@ nav div ul li button{
     background: transparent;
 }
 
-.contact-form.ng-invalid input:focus{
-	/*border-color: red;*/
-	box-shadow: red;
+.ng-invalid.ng-dirty{
+	border-color: red;	
+}
+
+.ng-valid.ng-dirty:focus{
+	border-color: green;
+}
+
+.error{
+	color: red;
 }
