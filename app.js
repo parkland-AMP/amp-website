@@ -7,7 +7,7 @@ app.controller('NavCtrl', function ($scope, $uibModal, $log) {
     var modalInstance = $uibModal.open({
       animation: true,
       templateUrl: 'ContactUs',
-      controller: 'ModalInstanceCtrl',
+      controller: 'CUCtrl',
     });
 
     modalInstance.result.then(function () {
@@ -17,15 +17,14 @@ app.controller('NavCtrl', function ($scope, $uibModal, $log) {
 
 });
 
-app.controller('ModalInstanceCtrl', function ($scope, $modalInstance) {
+app.controller('CUCtrl', function ($scope, $modalInstance) {
 
+  $scope.cover = true;
   $scope.ok = function (form) {
     if (form.$invalid) {
       console.log("INVALID");
-      //flag = false;
+      $scope.cover = false;
     }
-
-  //console.log(name)
 
     if(form.$valid){
       $modalInstance.close();
@@ -37,7 +36,8 @@ app.controller('ModalInstanceCtrl', function ($scope, $modalInstance) {
   };
 });
 
-app.controller('MainCtrl', function ($scope){
+
+app.controller('PortCtrl', function ($scope){
 
   $scope.projects = [
     {name:'Wesley Food Pantry', 
