@@ -15,45 +15,48 @@
 			<form name="contactUs" class="contact-form" novalidate>
 			  	<div class="form-group">
 					<label for="Name">Name</label>
-					<input type="text" class="form-control" ng-model="user.name" name="Name" placeholder="Name" required>
+					<input type="text" class="form-control" ng-model="user.name" name="Name" placeholder="Name..." required>
+
+				  	<div ng-hide="cover" role="alert">
+	      				<span class="error" ng-show="contactUs.Name.$error.required">Please Enter Name.</span>
+	    		  	</div>
 				</div>
 
-			  	<div role="alert">
-      				<span class="error" ng-show="contactUs.Name.$error.required">Required!</span>
-    		  	</div>
 
 			  	<div class="form-group">
 					<label for="Email">Email Address</label>
-					<input type="email" class="form-control" ng-model="user.email" name="Email"  placeholder="Email" required>
+					<input type="email" class="form-control" ng-model="user.email" name="Email"  placeholder="Email..." required>
+
+				 	 <div ng-hide="cover" role="alert">
+	      				<span class="error" ng-show="contactUs.Email.$error.required">Please Enter Email.</span>
+	      				<span class="error" ng-show="contactUs.Email.$error.email">Please Enter a Valid Email.</span>
+	    			  </div>
 			 	 </div>
 
-			 	 <div role="alert">
-      				<span class="error" ng-show="contactUs.Email.$error.required">Email required</span>
-      				<span class="error" ng-show="contactUs.Email.$error.email">Valid email required
-    			  </div>
 
     			<div class="form-group">
 					<label for="Message">Subject</label>
-					<input type="text" class="form-control" ng-model="user.subject" name="Subject"  required>
+					<input type="text" class="form-control" ng-model="user.subject" name="Subject" required>
+
+				 	<div ng-hide="cover" role="alert">
+	      				<span class="error" ng-show="contactUs.Subject.$error.required">Please Enter a Subject</span>
+	    		 	</div>
 			  	</div>
 
-			 	<div role="alert">
-      				<span class="error" ng-show="contactUs.Message.$error.required">Required!</span>
-    		 	</div>
 
 				<div class="form-group">
 					<label for="Message">Message</label>
 					<input type="text" class="form-control text-lg" ng-model="user.message" name="Message" placeholder="Your Message Here..." required>
+
+				 	<div ng-hide="cover" role="alert">
+	      				<span class="error" ng-show="contactUs.Message.$error.required">Please Enter a Message.</span>
+	    		 	</div>
 			 	</div>
-			 	<div role="alert">
-      				<span class="error" ng-show="contactUs.Message.$error.required">Required!</span>
-    		 	</div>
-    		 	<div>form is {{contactUs.$valid}}</div>
             </form>
         </div>
-        </div>
-        <div class="modal-footer">
-            <button class="btn btn-primary" type="button" ng-click="ok(contactUs)">OK</button>
-            <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
-        </div>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" type="submit" ng-click="ok(contactUs)">OK</button>
+        <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
+    </div>
     </script>
