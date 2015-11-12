@@ -18,8 +18,32 @@ app.controller('NavCtrl', function ($scope, $uibModal, $log) {
 });
 
 app.controller('CUCtrl', function ($scope, $modalInstance) {
+  $scope.name;
+  $scope.email;
+  $scope.subject;
+  $scope.message;
 
   $scope.cover = true;
+
+  $scope.submit = function (form) {
+
+    if (form.$invalid) {
+      console.log("INVALID");
+      $scope.cover = false;
+    }
+
+    if(form.$valid){
+      
+    var link = "mailto:ayiri1401@gmail.com"
+             // + "?cc=myCCaddress@example.com"
+             + "?subject=" + escape($scope.subject)
+             + "&body=" + escape($scope.message);
+
+    window.location.href = link;
+   }
+
+  }
+
   $scope.ok = function (form) {
     if (form.$invalid) {
       console.log("INVALID");
