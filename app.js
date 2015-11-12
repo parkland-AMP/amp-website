@@ -34,7 +34,7 @@ app.controller('CUCtrl', function ($scope, $modalInstance) {
 
     if(form.$valid){
       
-    var link = "mailto:ayiri1401@gmail.com"
+    var link = "mailto:csmith@parkland.edu.com"
              // + "?cc=myCCaddress@example.com"
              + "?subject=" + escape($scope.subject)
              + "&body=" + escape($scope.message);
