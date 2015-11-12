@@ -70,7 +70,10 @@ p{
 .spl-logo{
 	height: 400px;
 	width: 600px;
-	margin-top: 39px;
+	margin-bottom: 39px;
+	position: absolute;
+	top: 24%;
+	left: 30%;
 }
 
 .logo-hold{
