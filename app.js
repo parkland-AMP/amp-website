@@ -34,10 +34,11 @@ app.controller('CUCtrl', function ($scope, $modalInstance) {
 
     if(form.$valid){
       
-    var link = "mailto:csmith@parkland.edu.com"
+    var link = "mailto:csmith@parkland.edu"
              // + "?cc=myCCaddress@example.com"
              + "?subject=" + escape($scope.subject)
-             + "&body=" + escape($scope.message);
+             + "&body=" + escape($scope.message + "\n --From: " + $scope.name
+                                  + "\n --Email: " + $scope.email);
 
     window.location.href = link;
    }
